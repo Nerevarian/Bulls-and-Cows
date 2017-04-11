@@ -72,7 +72,7 @@ vector<int> v_generator()
 bool get_out(char leave)
 {
 	switch (leave) {
-	case 'N': case 'n': 
+	case 'Y': case 'y': 
 		return 1;
 		break;
 	default: 
@@ -105,7 +105,7 @@ int main()
 			else cerr << "Тут не четырехзначное число!\n\n";
 
 		}
-		cout << "Попыток: " << tries << "\nИграть еще? (Y/N)\n";//можно еще записывать рекорд в txt фаел рядом с игрой
+		cout << "Попыток: " << tries << "\nВыйти из игры? (Y/N)\n";//можно еще записывать рекорд в txt фаел рядом с игрой
 		char leave = 'b';
 		cin >> leave;
 		exit = get_out(leave);
