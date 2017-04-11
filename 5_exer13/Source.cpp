@@ -105,7 +105,7 @@ int main()
 			else cerr << "Тут не четырехзначное число!\n\n";
 
 		}
-		cout << "Попыток: " << tries << "\nИграть еще? (Y/N)\n";
+		cout << "Попыток: " << tries << "\nИграть еще? (Y/N)\n";//можно еще записывать рекорд в txt фаел рядом с игрой
 		char leave = 'b';
 		cin >> leave;
 		exit = get_out(leave);
