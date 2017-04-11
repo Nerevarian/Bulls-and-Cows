@@ -96,7 +96,8 @@ int main()
 		cout << "\nКомпьютер загадал число.\n";
 
 		int num;
-		for (bool win = false; win == false; )
+		int tries = 0;
+		for (bool win = false; win == false; ++tries)
 		{
 			cin >> num;
 			int num_check = log10(num) + 1; //ПРОБЛЕМА: если число начинается с 0, то компьютер его не принимает. (временно решена: компьютер не может загадать число, начинающееся с 0)
@@ -104,7 +105,7 @@ int main()
 			else cerr << "Тут не четырехзначное число!\n\n";
 
 		}
-		cout << "Играть еще? (Y/N)\n";
+		cout << "Попыток: " << tries << "\nИграть еще? (Y/N)\n";
 		char leave = 'b';
 		cin >> leave;
 		exit = get_out(leave);
